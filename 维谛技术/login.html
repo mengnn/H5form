@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <!-- 设置 viewport -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,viewport-fit=cover" />
+    <!-- 兼容国产浏览器的高速模式 -->
+    <meta name="renderer" content="webkit"/>
+    <meta name="Author" content="fans_m@163.com" />
+    <meta name="Keywords" content="软件" />
+    <meta name="Description" content="软件开发" />
+
+    <style type="text/css">
+      body,html{
+        margin:0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+      }
+      input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: #fff;
+      }
+      input::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: #fff;
+      }
+      input:-ms-input-placeholder {
+        color: #fff;
+      }
+      input::-webkit-input-placeholder {
+        color: #fff;
+      }
+      .loginBox{
+        width: 100%;
+        min-height: 100%;
+        background: url(images/bg.png) 0 0 no-repeat;
+        background-size: 100% 100%;
+      }
+      .loginImg{
+        width: 30%;
+        margin-top: 6%;
+        margin-left: 6%;
+      }
+      .loginTitle{
+        width: 60%;
+        margin-left: 20%;
+        margin-top: 6%;
+      }
+      .loginTime{
+        width: 60%;
+        margin-left: 25%;
+        margin-top: 5%;
+      }
+      .mainBox{
+        width: 100%;
+        overflow:hidden;
+        text-align: center;
+        margin-top: 4%;
+      }
+      .mainBox input{
+        width: 80%;
+        height: 40px;
+        background: rgba(255,255,255,0.6);
+        border-radius: 5px;
+        border: none;
+        outline-style: none;
+        box-sizing: border-box;
+        text-align:center;
+        margin-bottom: 3%;
+        font-size: 14px;
+      }
+      .btn{
+        display: inline-block;
+        width: 80%;
+        height: 40px;
+        line-height: 40px;
+        background: rgba(255,255,255,1);
+        border-radius: 5px;
+        font-size: 14px;
+      }
+      @media only screen and (device-width:375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3) {
+         .loginImg{
+            width: 33%;
+          }
+          .loginTitle{
+            width: 70%;
+            margin-left: 15%;
+            margin-top: 9%;
+          }
+          .loginTime{
+            margin-top: 7%;
+          }
+          .mainBox{
+        width: 100%;
+        overflow:hidden;
+        text-align: center;
+        margin-top: 8%;
+      }
+      .mainBox input{
+        height: 45px;
+        margin-bottom: 5%;
+        font-size: 14px;
+      }
+      .btn{
+        display: inline-block;
+        width: 80%;
+        height: 45px;
+        line-height: 45px;
+        background: rgba(255,255,255,1);
+        border-radius: 5px;
+        font-size: 16px;
+      }
+      }
+
+    </style>
+
+
+</head>
+<body>
+  <div class="loginBox">
+    <img src="images/loginImg.png" class="loginImg">
+    <img src="images/loginTitle.png" class="loginTitle">
+    <img src="images/loginTime.png" class="loginTime">
+    <div class="mainBox">
+      <input type="text" calss="mainPhone" placeholder="输入手机号码">
+      <input type="text" calss="mainNum" placeholder="输入邀请码">
+      <div class="btn">确认</div>
+    </div>
+  </div>
+
+
+
+<script type="text/javascript" src="http://frontend.huitengsoft.com/frontend/js/jquery.js"></script>
+
+</body>
+</html>

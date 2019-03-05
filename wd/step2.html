@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>第二步</title>
+    <!-- 设置 viewport -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,viewport-fit=cover" />
+    <!-- 兼容国产浏览器的高速模式 -->
+    <meta name="renderer" content="webkit"/>
+    <meta name="Author" content="fans_m@163.com" />
+    <meta name="Keywords" content="软件" />
+    <meta name="Description" content="软件开发" />
+
+    <style type="text/css">
+      body,html{
+        margin:0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+      }
+      input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: #fff;
+      }
+      input::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: #fff;
+      }
+      input:-ms-input-placeholder {
+        color: #fff;
+      }
+      input::-webkit-input-placeholder {
+        color: #fff;
+      }
+      ul,li{
+        list-style: none;
+        margin:0;
+        padding:0;
+      }
+      .loginBox{
+        width: 100%;
+        min-height: 100%;
+        background: url(images/bg2.png) 0 0 no-repeat;
+        background-size: 100% 100%;
+      }
+      .loginImg{
+        width: 30%;
+        margin-top: 6%;
+        margin-left: 6%;
+      }
+      .stepTitle{
+        width: 70%;
+        margin-left: 20%;
+        margin-top: 2%;
+      }
+      .loginTime{
+        width: 50%;
+        margin-left: 35%;
+        margin-top: 3%;
+      }
+      .mainBox{
+        width: 80%;
+        margin-left: 5%;
+        border-radius: 8px;
+        background: rgba(255,255,255,0.4);
+        margin-top: 4%;
+        padding:20px 5%;
+      }
+      .marinTitle{
+        width: 100%;
+        text-align:center;
+        color: #fff;
+        font-size: 16px;
+        margin-bottom: 15px;
+      }
+      .titleBox{
+        width: 100%;
+        color: #fff;
+        font-size:16px;
+        height: 172px;
+        overflow-y: auto;
+      }
+      .titleUl{
+        width: 100%;
+        overflow:hidden;
+      }
+      .titleUl li{
+        width: 95%;
+        padding:2px 0 2px 5%;
+        color: #fff;
+        font-size: 16px;
+        margin:10px 0;
+      }
+      .titleDiv{
+        width: 95%;
+        padding-left: 5%;
+        overflow:hidden;
+      }
+
+      .btn1,.btn2{
+        display: inline-block;
+        width: 80%;
+        margin-left: 10%;
+        height: 40px;
+        line-height: 40px;
+        background: rgba(255,255,255,1);
+        border-radius: 5px;
+        font-size: 16px;
+        text-align:center;
+        margin-top: 5%;
+      }
+      .titleUl .titleUlact{
+        background: #DB733A;
+      }
+      .otherLi{
+        width: 100%;
+      }
+      .contentDiv{
+         width: 80%;
+	    min-height: 25px;
+	    outline-style: none;
+	    background: transparent;
+	    margin-left: 2%;
+	    border: 1px solid #ccc;
+	    color: #fff;
+	    display: inline-block;
+	    vertical-align: top;
+      }
+      @media only screen and (device-width:375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3) {
+         .loginImg{
+            width: 33%;
+          }
+          .stepTitle{
+            width: 74%;
+            margin-left: 18%;
+            margin-top: 6%;
+          }
+          .mainBox{
+            margin-top: 10%;
+            padding:30px 5%;
+          }
+          .btn1,.btn2{
+            margin-top: 8%;
+          }
+      }
+
+    </style>
+
+
+</head>
+<body>
+  <div class="loginBox">
+    <img src="images/loginImg.png" class="loginImg">
+    <img src="images/stepTitle.png" class="stepTitle">
+    <img src="images/loginTime.png" class="loginTime">
+    <div class="mainBox">
+      <div class="marinTitle">
+        答题数
+        <span>1/10</span>
+      </div>
+      <div class="titleBox titleBox1">
+        <div class="titleDiv">1、2018年渠道政策调整后，您认为哪些变化对销售支撑力度大？（多选）</div>
+        <ul class="titleUl">
+          <li class="">A. 销售门槛设定</li>
+          <li>B. 返点核算</li>
+          <li>C. 授信</li>
+          <li>D. 培训</li>
+        </ul>
+      </div>
+      <div class="titleBox titleBox2" style="display:none;">
+        <div class="titleDiv">2. 您知道或使用过哪些维谛业务支撑平台？（多选）</div>
+        <ul class="titleUl">
+          <li class="">A. 维谛官方网站（VertivCo.com）</li>
+          <li>B. 维谛官方微信订阅号(VertivCo)</li>
+          <li>C. 培训-微课堂（维谛官方微信分销服务号 VertivCO- ITChannel）</li>
+          <li>D. 返点查询平台（维谛官方微信分销服务号 VertivCO- ITChannel）</li>
+        </ul>
+      </div>
+      <div class="titleBox titleBox3" style="display:none;">
+        <div class="titleDiv">3. 您认为下面哪些推广手段能有效打动客户（多选）</div>
+        <ul class="titleUl">
+          <li class="">A. 产品/方案的高清视频介绍</li>
+          <li>B. 微信公众号优质文案</li>
+          <li>C. 产品模型</li>
+          <li>D. 详细案例资料</li>
+          <li>E. 总部展厅参观</li>
+          <li>F. 内容丰富的官网</li>
+          <li>其他<div class="contentDiv" contenteditable="true"></div></li>
+        </ul>
+      </div>
+      <div class="titleBox titleBox4" style="display:none;">
+        <div class="titleDiv">4. 您感觉哪一类的售前支持内容获取有难度（多选）</div>
+        <ul class="titleUl">
+          <li class="">A. 产品宣传资料</li>
+          <li>B. 维谛公司资质文件</li>
+          <li>C. 成功案例清单（客户名单）</li>
+          <li>D. 方案建议书</li>
+          <li class="">E. 配置报价表</li>
+          <li>F. 产品测试报告</li>
+          <li>G. 用户使用报告</li>
+          <li>H. 产品/方案图片</li>
+          <li>其他<div class="contentDiv" contenteditable="true"></div></li>
+        </ul>
+      </div>
+      <div class="titleBox titleBox5" style="display:none;">
+        <div class="titleDiv">5. 在您代理销售的维谛产品中，质量/性能最让您和您的客户满意的是（可多选）</div>
+        <ul class="titleUl">
+          <li class="">A. UPS</li>
+          <li>B. 空调</li>
+          <li>C. SmartSolution一体化机房</li>
+          <li>D. 配电PDU</li>
+          <li class="">E. 机房监控</li>
+          <li>F. 直流电源产品</li>
+          <li>其他<div class="contentDiv" contenteditable="true"></div></li>
+        </ul>
+      </div>
+      <div class="titleBox titleBox6" style="display:none;">
+        <div class="titleDiv">6. 非数据中心以外的应用中，电源产品（UPS、直流操作电源、通信电源）需求（单选）</div>
+        <ul class="titleUl">
+          <li class="">A. 数量很多，且客户很重视</li>
+          <li>B. 数量很多，但客户不重视，只关心预算</li>
+          <li>C. 数量少，但客户很重视</li>
+          <li>D. 不涉及</li>
+          <li>其他，请详细说明<div class="contentDiv" style="width: 50%;" contenteditable="true"></div></li>
+          
+        </ul>
+      </div>
+      <div class="titleBox titleBox7" style="display:none;">
+        <div class="titleDiv">7. 非数据中心以外的应用中，您认为客户最关心的是（多选）</div>
+        <ul class="titleUl">
+          <li class="">A. 方案架构设计</li>
+          <li>B. 品牌选择</li>
+          <li>C. 开机调试顺利完成</li>
+          <li>D. 现场培训措施完善</li>
+          <li class="">E. 具有强大的本地备件库</li>
+          <li>F. 长期维护计划</li>
+          <li>其他，请详细说明<div class="contentDiv" style="width: 50%;" contenteditable="true"></div></li>
+        </ul>
+      </div>
+      <div class="titleBox titleBox8" style="display:none;">
+        <div class="titleDiv">8. 在日常的项目接触中，是否有用到48V直流电源模块和系统？主要应用在哪些场景？（问答）</div>
+        <textarea style="width: 98%;height: 92px;background: transparent;margin-top: 5px;"></textarea>
+      </div>
+      <div class="titleBox titleBox9" style="display:none;">
+        <div class="titleDiv">9. 展示区新增的STAGE模块将于会议当天下午4点开始，您对以下哪些演讲感兴趣？（多选）</div>
+        <ul class="titleUl">
+          <li class="">A. Vertiv与高性能计算</li>
+          <li>B. 带你玩转地铁项目</li>
+          <li>C. 如何建设PUE≤1.3的数据中心</li>
+          <li>D. 小型监控系统快速建设之道</li>
+          <li class="">E. 工业直流电源系统介绍</li>
+          <li>F. 维谛配电在石化行业的规模应用</li>
+          <li class="">G. 灵活可变的智能Rack PDU</li>
+          <li>H. 新产品介绍：XPM</li>
+        </ul>
+      </div>
+      <div class="titleBox titleBox10" style="display:none;">
+        <div class="titleDiv">10. 您对我们是否还有其他建议？（问答）</div>
+        <textarea style="width: 98%;height: 92px;background: transparent;margin-top: 5px;"></textarea>
+      </div>
+    </div>
+    <div class="btn1" dir="0">上一题</div>
+    <div class="btn2" dir="0">下一题</div>
+  </div>
+
+<input type="hidden" id="ques1" value="" />
+<input type="hidden" id="ques2" value="" />
+<input type="hidden" id="ques3" value="" />
+<input type="hidden" id="ques4" value="" />
+<input type="hidden" id="ques5" value="" />
+<input type="hidden" id="ques6" value="" />
+<input type="hidden" id="ques7" value="" />
+<input type="hidden" id="ques8" value="" />
+<input type="hidden" id="ques9" value="" />
+<input type="hidden" id="ques10" value="" />
+
+<script type="text/javascript" src="http://frontend.huitengsoft.com/frontend/js/jquery.js"></script>
+<script type="text/javascript">
+var name = GetQueryString("name");
+var name1 = decodeURI(name)
+
+var sex = GetQueryString("sex");
+var sex1 = decodeURI(sex)
+
+var corporate = GetQueryString("corporate");
+var corporate1 = decodeURI(corporate)
+
+var duties = GetQueryString("duties");
+var duties1 = decodeURI(duties)
+
+var time = GetQueryString("time");
+var time1 = decodeURI(time)
+
+
+var phone = GetQueryString("phone");
+
+
+
+  $(".titleBox1,.titleBox2,.titleBox3,.titleBox4,.titleBox5,.titleBox7,.titleBox9").find(".titleUl").find("li").click(function(){
+    $(this).toggleClass("titleUlact");
+  });
+  $(".titleBox6").find(".titleUl").find("li").click(function(){
+    $(this).addClass('titleUlact').siblings().removeClass("titleUlact");
+  });
+
+  // 上一题
+  $(".btn1").click(function(){
+    var btnDir = $(this).attr("dir");
+    // alert(btnDir);
+    if(btnDir == 0){
+      $(".titleBox1").show().siblings(".titleBox").hide();
+      $(".btn2").attr("dir","0");
+      $(".btn1").attr("dir","0");
+      $(".marinTitle").find("span").html("1/10");
+    }else if(btnDir == 1){
+      $(".titleBox1").show().siblings(".titleBox").hide();
+      $(".btn2").attr("dir","0");
+      $(".btn1").attr("dir","0");
+      $(".marinTitle").find("span").html("1/10");
+    }else if(btnDir == 2){
+      $(".titleBox2").show().siblings(".titleBox").hide();
+      $(".btn2").attr("dir","1");
+      $(".btn1").attr("dir","1");
+      $(".marinTitle").find("span").html("2/10");
+    }else if(btnDir == 3){
+      $(".titleBox3").show().siblings(".titleBox").hide();
+      $(".btn2").attr("dir","2");
+      $(".btn1").attr("dir","2");
+      $(".marinTitle").find("span").html("3/10");
+    }else if(btnDir == 4){
+      $(".titleBox4").show().siblings(".titleBox").hide();
+      $(".btn2").attr("dir","3");
+      $(".btn1").attr("dir","3");
+      $(".marinTitle").find("span").html("4/10");
+    }else if(btnDir == 5){
+      $(".titleBox5").show().siblings(".titleBox").hide();
+      $(".btn2").attr("dir","4");
+      $(".btn1").attr("dir","4");
+      $(".marinTitle").find("span").html("5/10");
+    }else if(btnDir == 6){
+      $(".titleBox6").show().siblings(".titleBox").hide();
+      $(".btn2").attr("dir","5");
+      $(".btn1").attr("dir","5");
+      $(".marinTitle").find("span").html("6/10");
+    }else if(btnDir == 7){
+      $(".titleBox7").show().siblings(".titleBox").hide();
+      $(".btn2").attr("dir","6");
+      $(".btn1").attr("dir","6");
+      $(".marinTitle").find("span").html("7/10");
+    }else if(btnDir == 8){
+      $(".titleBox8").show().siblings(".titleBox").hide();
+      $(".btn2").attr("dir","7");
+      $(".btn1").attr("dir","7");
+      $(".marinTitle").find("span").html("8/10");
+    }else if(btnDir == 9){
+      $(".titleBox9").show().siblings(".titleBox").hide();
+      $(".btn2").attr("dir","8");
+      $(".btn1").attr("dir","8");
+      $(".marinTitle").find("span").html("9/10");
+    }
+
+  })
+  // 下一题
+  $(".btn2").click(function(){
+    var btnDir = $(this).attr("dir");
+    // alert(btnDir);
+    if(btnDir == 0){
+     var ques1="";
+      $(".titleBox1").find(".titleUl").find(".titleUlact").each(function(){
+	 		ques1+= $(this).text()+",";
+	  })	
+      
+      if(ques1==""){
+      	  alert("请选择答案")
+      }else{
+	      $(".titleBox2").show().siblings(".titleBox").hide();
+	      $(".btn2").attr("dir","1");
+	      $(".btn1").attr("dir","1");
+	      $(".marinTitle").find("span").html("2/10");
+	      $("#ques1").val(ques1);
+      }
+    }else if(btnDir == 1){
+     var ques2="";
+      $(".titleBox2").find(".titleUl").find(".titleUlact").each(function(){
+	 		ques2+= $(this).text()+",";
+	  })
+      if(ques2==''){
+	      alert("请选择答案")
+      }else{
+      	  $(".titleBox3").show().siblings(".titleBox").hide();
+	      $(".btn2").attr("dir","2");
+	      $(".btn1").attr("dir","2");
+	      $(".marinTitle").find("span").html("3/10");
+	      $("#ques2").val(ques2);
+       }
+    }else if(btnDir == 2){
+      var ques3="";
+      $(".titleBox3").find(".titleUl").find(".titleUlact").each(function(){
+	 		ques3+= $(this).html()+",";
+	  })
+      if(ques3==''){
+      	  alert("请选择答案")
+      }else{
+	      $(".titleBox4").show().siblings(".titleBox").hide();
+	      $(".btn2").attr("dir","3");
+	      $(".btn1").attr("dir","3");
+	      $(".marinTitle").find("span").html("4/10");
+	      $("#ques3").val(ques3);
+      }
+    }else if(btnDir == 3){
+      var ques4="";
+      $(".titleBox4").find(".titleUl").find(".titleUlact").each(function(){
+	 		ques4+= $(this).text()+",";
+	  })
+      if(ques4==''){
+      	  alert("请选择答案")
+      }else{
+	      $(".titleBox5").show().siblings(".titleBox").hide();
+		  $(".btn2").attr("dir","4");
+		  $(".btn1").attr("dir","4");
+		  $(".marinTitle").find("span").html("5/10");
+	      $("#ques4").val(ques4);
+      }
+    }else if(btnDir == 4){
+      var ques5="";
+      $(".titleBox5").find(".titleUl").find(".titleUlact").each(function(){
+	 		ques5+= $(this).text()+",";
+	  })
+      if(ques5==''){
+      	  alert("请选择答案")
+      }else{
+	      $(".titleBox6").show().siblings(".titleBox").hide();
+	      $(".btn2").attr("dir","5");
+	      $(".btn1").attr("dir","5");
+	      $(".marinTitle").find("span").html("6/10");
+	      $("#ques5").val(ques5);
+	      }
+    }else if(btnDir == 5){
+    	var ques6="";
+      $(".titleBox6").find(".titleUl").find(".titleUlact").each(function(){
+	 		ques6+= $(this).text()+",";
+	  })
+    if(ques6==''){
+   		 alert("请选择答案")
+    }else{
+      $(".titleBox7").show().siblings(".titleBox").hide();
+      $(".btn2").attr("dir","6");
+      $(".btn1").attr("dir","6");
+      $(".marinTitle").find("span").html("7/10");
+      $("#ques6").val(ques6);
+    }
+     
+    }else if(btnDir == 6){
+    var ques7="";
+      $(".titleBox7").find(".titleUl").find(".titleUlact").each(function(){
+	 		ques7+= $(this).text()+",";
+	  })
+	  
+	  if(ques7==''){
+	  	alert("请选择答案")
+	  }else{
+	  	 $(".titleBox8").show().siblings(".titleBox").hide();
+         $(".btn2").attr("dir","7");
+         $(".btn1").attr("dir","7");
+         $(".marinTitle").find("span").html("8/10");
+         $("#ques7").val(ques7);
+	  }
+      
+    }else if(btnDir == 7){
+      var ques8="";
+      ques8 = $(".titleBox8").find("textarea").val();
+      if(ques8==''){
+      	alert("请选择答案")
+      }else{
+      	$(".titleBox9").show().siblings(".titleBox").hide();
+        $(".btn2").attr("dir","8");
+        $(".btn1").attr("dir","8");
+        $(".marinTitle").find("span").html("9/10");
+        $("#ques8").val(ques8);
+      }
+      
+    }else if(btnDir == 8){
+     var ques9="";
+      $(".titleBox9").find(".titleUl").find(".titleUlact").each(function(){
+	 		ques9+= $(this).text()+",";
+	  })
+      if(ques9==''){
+      	alert("请选择答案")
+      }else{
+      	$(".titleBox10").show().siblings(".titleBox").hide();
+        $(".btn2").attr("dir","9");
+        $(".btn1").attr("dir","9");
+        $(".marinTitle").find("span").html("10/10");
+         $("#ques9").val(ques9);
+      }
+      
+    }else if(btnDir == 9){
+     var ques10="";
+      ques10 = $(".titleBox10").find("textarea").val();
+      if(ques10==''){
+      	alert("请选择答案")
+      }else{
+      	$(".titleBox10").show().siblings(".titleBox").hide();
+        $(".btn2").attr("dir","9");
+        $(".btn1").attr("dir","9");
+        $(".marinTitle").find("span").html("10/10");
+         $("#ques10").val(ques10);
+         
+
+
+	   var ques11=$("#ques1").val();
+       var ques22=$("#ques2").val();
+       var ques33=$("#ques3").val();
+       var ques44=$("#ques4").val();
+       var ques55=$("#ques5").val();
+       var ques66=$("#ques6").val();
+       var ques77=$("#ques7").val();
+       var ques88=$("#ques8").val();
+       var ques99=$("#ques9").val();
+       var ques1010=$("#ques10").val();
+       $.ajax({
+			type : "post",
+			url : "/dzTemporary/saveQuesWd",
+			data : {
+				"name":name1,
+				"sex":sex1,
+				"corporate":corporate1,
+				"duties":duties1,
+				"time":time1,
+				"phone":phone,
+			
+				"ques1":ques11,
+				"ques2":ques22,
+				"ques3":ques33,
+				"ques4":ques44,
+				"ques5":ques55,
+				"ques6":ques66,
+				"ques7":ques77,
+				"ques8":ques88,
+				"ques9":ques99,
+				"ques10":ques1010
+				
+			},
+			async : false,
+			success:function(data){
+				if(data.indexOf("success") != -1 ){
+					var arr = data.split("_");
+					var qc = arr[2];
+					window.location.href= "/wap/wd/step4.html?qc="+qc;
+				}else{
+					alert("有数据为空");
+				}
+		    }
+		});
+      }
+      
+    }
+  })
+  
+  
+  
+  
+  function GetQueryString(name)
+{
+     var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+     var r = window.location.search.substr(1).match(reg);
+     if(r!=null)return  unescape(r[2]); return null;
+}
+</script>
+
+</body>
+</html>

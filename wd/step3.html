@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <!-- 设置 viewport -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,viewport-fit=cover" />
+    <!-- 兼容国产浏览器的高速模式 -->
+    <meta name="renderer" content="webkit"/>
+    <meta name="Author" content="fans_m@163.com" />
+    <meta name="Keywords" content="软件" />
+    <meta name="Description" content="软件开发" />
+    <link type="text/css" rel="stylesheet" href="js/time/jeDate-test.css"/>
+    <link type="text/css" rel="stylesheet" href="js/time/skin/jedate.css"/>
+
+    <style type="text/css">
+      body,html{
+        margin:0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+      }
+      input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: #000;
+      }
+      input::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: #000;
+      }
+      input:-ms-input-placeholder {
+        color: #000;
+      }
+      input::-webkit-input-placeholder {
+        color: #000;
+      }
+      ul,li{
+        list-style: none;
+        margin:0;
+        padding:0;
+      }
+      .loginBox{
+        width: 100%;
+        min-height: 100%;
+        background: url(images/bg3.png) 0 0 no-repeat;
+        background-size: 100% 100%;
+      }
+      .loginImg{
+        width: 30%;
+        margin-top: 6%;
+        margin-left: 6%;
+      }
+      .stepTitle{
+        width: 70%;
+        margin-left: 20%;
+        margin-top: 2%;
+      }
+      .loginTime{
+        width: 50%;
+        margin-left: 35%;
+        margin-top: 3%;
+      }
+      .mainBox{
+        width: 90%;
+        margin-left: 2%;
+        border-radius: 8px;
+        background: rgba(255,255,255,0.4);
+        margin-top: 2%;
+        padding:20px 3%;
+      }
+      .marinTitle{
+        width: 100%;
+        text-align:center;
+        color: #fff;
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      .marinTitle2{
+        width: 100%;
+        text-align:center;
+        color: #fff;
+        font-size: 14px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+      }
+      .mainBox input,.mainBox select{
+        width: 94%;
+	    margin-left: 2%;
+	    height: 35px;
+	    background: rgba(255,255,255,0.6);
+	    border-radius: 5px;
+	    border: none;
+	    outline-style: none;
+	    box-sizing: border-box;
+	    text-align: left;
+	    margin-bottom: 3%;
+	    font-size: 14px;
+	    padding-left: 2%;
+      }
+      .jeinpbox{
+        width: 100%;
+      }
+
+       .btnBox{
+         width: 90%;
+          margin-left: 2%;
+          margin-top: 2%;
+          padding: 0 3%;
+       }
+      .btn{
+        display: inline-block;
+        width: 96%;
+        margin-left: 2%;
+        height: 40px;
+        line-height: 40px;
+        background: rgba(255,255,255,1);
+        border-radius: 5px;
+        font-size: 14px;
+        text-align:center;
+      }
+      .bottomTitle{
+        width: 100%;
+        text-align: center;
+        font-size:12px;
+        color: #fff;
+        margin-top: 1%;
+      }
+      @media only screen and (device-width:375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3) {
+         .loginImg{
+            width: 33%;
+          }
+          .stepTitle{
+            width: 74%;
+            margin-left: 18%;
+            margin-top: 6%;
+          }
+          .mainBox{
+            margin-top: 8%;
+          }
+          .mainBox input{
+            height: 40px;
+            margin-bottom: 4%;
+          }
+           .btnBox{
+              margin-top: 6%;
+           }
+          .bottomTitle{
+            margin-top: 2%;
+          }
+      }
+
+    </style>
+
+
+</head>
+<body>
+  <div class="loginBox">
+    <img src="images/loginImg.png" class="loginImg">
+    <img src="images/stepTitle.png" class="stepTitle">
+    <img src="images/loginTime.png" class="loginTime">
+    <div class="mainBox">
+      <div class="marinTitle">
+        注册报名
+      </div>
+      <div class="marinTitle2">为了更好地为您服务，请您协助我们完善个人信息。</div>
+      <input type="text" id="name" placeholder="姓名">
+      <input type="text" id="sex" placeholder="性别">
+      <input type="text" id="corporate" placeholder="公司名称">
+      <input type="text" id="duties" placeholder="职务">
+      <select id="testId">
+        <option value="请选择">请选择</option>
+        <option value="10:00前">10:00前</option>
+        <option value="10:00-12:00">10:00-12:00</option>
+        <option value="12:00-14:00">12:00-14:00</option>
+        <option value="14:00-16:00">14:00-16:00</option>
+        <option value="16:00-18:00">16:00-18:00</option>
+        <option value="18:00-20:00">18:00-20:00</option>
+        <option value="20:00后">20:00后</option>
+        <option value="15日早上">15日早上</option>
+      </select>
+      <!-- <div class="jeinpbox">
+        <input type="text" class="jeinput" id="test03" placeholder="点击选择" style="margin-bottom: 0;" />
+      </div> -->
+
+    </div>
+    <div class="btnBox">
+      <div class="btn" onclick="btn();">填写调查问卷</div>
+    </div>
+    <div class="bottomTitle">请填写调查问卷</div>
+    <div class="bottomTitle">可线下领取奖品，数量有限，先到先得</div>
+  </div>
+
+
+
+<script src="js/jquery.js"></script>
+<script type="text/javascript" src="js/time/jquery.jedate.js"></script>
+<script type="text/javascript" src="js/time/jedate-test.js"></script>
+
+<script>
+function btn(){
+	var url = location.search;
+	if (url.indexOf("?") != -1) {
+	    var phone = url.substr(7);
+	}
+	var name=$("#name").val();
+	if(name==""){
+		alert("请输入姓名");
+		return;
+	}
+	var sex=$("#sex").val();
+	if(sex==""){
+		alert("请输入性别");
+		return;
+	}
+	var corporate=$("#corporate").val();
+	if(corporate==""){
+		alert("请输入公司名称");
+		return;
+	}
+	var duties=$("#duties").val();
+	if(duties==""){
+		alert("请输入职务");
+		return;
+	}
+	
+	var time=$("#testId option:selected").val();
+	if(time=="请选择"){
+		alert("请选择时间");
+		return;
+	}
+	
+
+	var name1=encodeURI(name);
+	var sex1=encodeURI(sex);
+	var corporate1=encodeURI(corporate);
+	var duties1=encodeURI(duties);
+	var time1=encodeURI(time);
+	
+	//var url= "/wap/wd/step2.html?name="+name1+"&sex="+sex1+"&corporate="+corporate1+"&duties="+duties1+"&time="+time1+"&phone="+phone;
+	var url= "/wap/wd/warning.html?name="+name1+"&sex="+sex1+"&corporate="+corporate1+"&duties="+duties1+"&time="+time1+"&phone="+phone;
+	var u=encodeURI(url);
+	window.location.href=u;
+	
+	
+}
+
+</script>
+</body>
+</html>

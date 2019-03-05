@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>第三步</title>
+    <!-- 设置 viewport -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,viewport-fit=cover" />
+    <!-- 兼容国产浏览器的高速模式 -->
+    <meta name="renderer" content="webkit"/>
+    <meta name="Author" content="fans_m@163.com" />
+    <meta name="Keywords" content="软件" />
+    <meta name="Description" content="软件开发" />
+    <link type="text/css" rel="stylesheet" href="js/time/jeDate-test.css"/>
+    <link type="text/css" rel="stylesheet" href="js/time/skin/jedate.css"/>
+
+    <style type="text/css">
+      body,html{
+        margin:0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+      }
+      input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: #fff;
+      }
+      input::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: #fff;
+      }
+      input:-ms-input-placeholder {
+        color: #fff;
+      }
+      input::-webkit-input-placeholder {
+        color: #fff;
+      }
+      ul,li{
+        list-style: none;
+        margin:0;
+        padding:0;
+      }
+      .loginBox{
+        width: 100%;
+        min-height: 100%;
+        background: url(images/bg3.png) 0 0 no-repeat;
+        background-size: 100% 100%;
+      }
+      .loginImg{
+        width: 30%;
+        margin-top: 6%;
+        margin-left: 6%;
+      }
+      .stepTitle{
+        width: 70%;
+        margin-left: 20%;
+        margin-top: 2%;
+      }
+      .loginTime{
+        width: 50%;
+        margin-left: 35%;
+        margin-top: 3%;
+      }
+      .mainBox{
+        width: 90%;
+        margin-left: 2%;
+        border-radius: 8px;
+        background: rgba(255,255,255,0.4);
+        margin-top: 2%;
+        padding:20px 3%;
+      }
+      .marinTitle{
+        width: 100%;
+        text-align:center;
+        color: #fff;
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      .marinTitle2{
+        width: 100%;
+        text-align:center;
+        color: #fff;
+        font-size: 14px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+      }
+      .mainBox input,.testTitle{
+        width: 96%;
+        margin-left: 2%;
+        height: 35px;
+        line-height: 35px;
+        background: rgba(255,255,255,0.6);
+        border-radius: 5px;
+        border: none;
+        outline-style: none;
+        box-sizing: border-box;
+        text-align: center;
+        margin-bottom: 3%;
+        font-size: 14px;
+      }
+      .jeinpbox{
+        width: 100%;
+      }
+
+       .btnBox{
+         width: 90%;
+          margin-left: 2%;
+          margin-top: 2%;
+          padding: 0 3%;
+       }
+      .btn{
+        display: inline-block;
+        width: 96%;
+        margin-left: 2%;
+        height: 40px;
+        line-height: 40px;
+        background: rgba(255,255,255,1);
+        border-radius: 5px;
+        font-size: 14px;
+        text-align:center;
+      }
+      .bottomTitle{
+        width: 100%;
+        text-align: center;
+        font-size:12px;
+        color: #fff;
+        margin-top: 1%;
+      }
+      .testDiv{
+        width: 100%;
+      }
+      .testUl{
+        width: 100%;
+        overflow:hidden;
+        position: absolute;
+      }
+      .testUl li{
+        width: 96%;
+        margin-left: 2%;
+        height: 35px;
+        line-height: 35px;
+        background: #D36036;
+        text-align:center;
+      }
+      @media only screen and (device-width:375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3) {
+         .loginImg{
+            width: 33%;
+          }
+          .stepTitle{
+            width: 74%;
+            margin-left: 18%;
+            margin-top: 6%;
+          }
+          .mainBox{
+            margin-top: 8%;
+          }
+          .mainBox input{
+            height: 40px;
+            margin-bottom: 4%;
+          }
+           .btnBox{
+              margin-top: 6%;
+           }
+          .bottomTitle{
+            margin-top: 2%;
+          }
+      }
+
+    </style>
+
+
+</head>
+<body>
+  <div class="loginBox">
+    <img src="images/loginImg.png" class="loginImg">
+    <img src="images/stepTitle.png" class="stepTitle">
+    <img src="images/loginTime.png" class="loginTime">
+    <div class="mainBox">
+      <div class="marinTitle">
+        注册报名
+      </div>
+      <div class="marinTitle2">为了更好地为您服务，请您协助我们完善个人信息。</div>
+      <input type="text" placeholder="姓名">
+      <input type="text" placeholder="性别">
+      <input type="text" placeholder="公司名称">
+      <input type="text" placeholder="职务">
+      <!-- <div class="jeinpbox">
+        <input type="text" class="jeinput" id="test03" placeholder="点击选择" style="margin-bottom: 0;" />
+      </div> -->
+      <!-- <div class="testDiv">
+        <div class="testTitle" style="color: #fff;">请选择</div>
+        <ul class="testUl">
+          <li>请选择</li>
+          <li>10:00前</li>
+          <li>10:00-12:00</li>
+          <li>12:00-14:00</li>
+          <li>14:00-16:00</li>
+          <li>16:00-18:00</li>
+          <li>18:00-20:00</li>
+          <li>20:00后</li>
+          <li>15日早上</li>
+        </ul>
+      </div> -->
+
+    </div>
+    <div class="btnBox">
+      <div class="btn">填写调查问卷</div>
+    </div>
+    <div class="bottomTitle">请填写调查问卷</div>
+    <div class="bottomTitle">可线下领取奖品，数量有限，先到先得</div>
+  </div>
+
+
+
+<script type="text/javascript" src="http://frontend.huitengsoft.com/frontend/js/jquery.js"></script>
+<script type="text/javascript" src="js/time/jquery.jedate.js"></script>
+<script type="text/javascript" src="js/time/jedate-test.js"></script>
+
+</body>
+</html>
