@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>产品展示</title>
+    <!-- 设置 viewport -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1,viewport-fit=cover" />
+    <!-- 兼容国产浏览器的高速模式 -->
+    <meta name="renderer" content="webkit"/>
+    <meta name="Author" content="fans_m@163.com" />
+    <meta name="Keywords" content="软件" />
+    <meta name="Description" content="软件开发" />
+
+    <style type="text/css">
+      body,html{
+        margin:0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+      }
+      ul,li{
+        list-style: none;
+        margin:0;
+        padding: 0;
+      }
+      .loginBox{
+        width: 100%;
+        min-height: 100%;
+        background: url(images/bg4.png) 0 0 no-repeat;
+        background-size: 100% 100%;
+      }
+      .loginImg{
+        width: 30%;
+        margin-top: 6%;
+        margin-left: 6%;
+      }
+      .loginTitle{
+        width: 60%;
+        margin-left: 20%;
+        margin-top: 6%;
+      }
+      .loginTime{
+        width: 60%;
+        margin-left: 25%;
+        margin-top: 5%;
+      }
+      .mainBox{
+        width: 90%;
+        margin-left: 5%;
+        overflow:hidden;
+        text-align: center;
+        margin-top: 4%;
+      }
+      .mainContent1,.mainContent2,.mainContent3{
+        width: 80%;
+        overflow:hidden;
+        margin-left: 10%;
+      }
+      .mainContent1 li{
+        float: left;
+        width: 100%;
+      }
+      .mainContent2 li:nth-child(1){
+        float: left;
+        width: 51.5%;
+        margin-right: 1.75%;
+      }
+      .mainContent2 li:nth-child(2){
+        float: left;
+        width: 26%;
+        margin-right: 1.75%;
+      }
+      .mainContent2 li:nth-child(3){
+        float: left;
+        width: 19%;
+      }
+      .mainContent3 li:nth-child(1){
+        float: left;
+        width: 12.1%;
+        margin-right: 2.475%;
+      }
+      .mainContent3 li:nth-child(2){
+        float: left;
+        width: 14.5%;
+        margin-right: 2.475%;
+      }
+      .mainContent3 li:nth-child(3){
+        float: left;
+        width: 30.2%;
+        margin-right: 2.475%;
+      }
+      .mainContent3 li:nth-child(4){
+        float: left;
+        width: 19.4%;
+        margin-right: 2.475%;
+      }
+      .mainContent3 li:nth-child(5){
+        float: left;
+        width: 13.9%;
+      }
+      .mainContent1 a,.mainContent2 a,.mainContent3 a{
+        display: inline-block;
+        overflow:hidden;
+      }
+      .mainContent1 li a img,.mainContent2 li a img,.mainContent3 li a img{
+        width: 100%;
+      }
+      .bottomTitle{
+        width: 100%;
+        text-indent: center;
+        color: #fff;
+        font-size:14px;
+        margin:1%;
+      }
+
+
+      @media only screen and (device-width:375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3) {
+         .loginImg{
+            width: 33%;
+          }
+          .loginTitle{
+            width: 70%;
+            margin-left: 15%;
+            margin-top: 9%;
+          }
+          .loginTime{
+            margin-top: 7%;
+          }
+          .mainBox{
+            width: 90%;
+            margin-left: 5%;
+            overflow:hidden;
+            text-align: center;
+            margin-top: 8%;
+          }
+          .mainContent1,.mainContent2,.mainContent3{
+            width: 90%;
+            overflow:hidden;
+            margin-left: 5%;
+          }
+
+      }
+
+    </style>
+
+
+</head>
+<body>
+  <div class="loginBox">
+    <img src="images/loginImg.png" class="loginImg">
+    <img src="images/loginTitle.png" class="loginTitle">
+    <img src="images/loginTime.png" class="loginTime">
+    <div class="mainBox">
+      <ul class="mainContent1">
+        <li>
+          <a href="#">
+            <img src="images/pro1.png">
+          </a>
+        </li>
+      </ul>
+      <ul class="mainContent2">
+        <li>
+          <a href="#">
+            <img src="images/pro2.png">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/pro3.png">
+          </a>
+        </li>
+        <li style="margin-right: 0;">
+          <a href="#">
+            <img src="images/pro4.png">
+          </a>
+        </li>
+      </ul>
+      <ul class="mainContent3">
+        <li>
+          <a href="#">
+            <img src="images/pro5.png">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/pro6.png">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/pro7.png">
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="images/pro8.png">
+          </a>
+        </li>
+        <li style="margin-right: 0;">
+          <a href="#">
+            <img src="images/pro9.png">
+          </a>
+        </li>
+      </ul>
+      <p class="bottomTitle">请点击上图查看产品信息</p>
+    </div>
+  </div>
+
+
+
+<script type="text/javascript" src="http://frontend.huitengsoft.com/frontend/js/jquery.js"></script>
+
+</body>
+</html>
